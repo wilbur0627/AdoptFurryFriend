@@ -1,0 +1,14 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+// @import url("https://fonts.cdnfonts.com/css/source-sans-pro");
+// @import url('https://fonts.cdnfonts.com/css/helvetica-inserat-lt-std');
+@import './transition.scss';
+
+html {
+  scrollbar-width: none;
+}
+* {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+}

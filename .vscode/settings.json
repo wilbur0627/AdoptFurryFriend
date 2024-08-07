@@ -4,6 +4,7 @@
         "source.fixAll.eslint": "explicit",
         "source.fixAll.stylistic": "explicit",
     },
+    "editor.formatOnSave": true,
     "stylelint.validate": [
         "css",
         "less",

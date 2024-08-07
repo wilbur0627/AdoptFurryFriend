@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <Navbar />
-    <NuxtPage />
-  </div>
+  <div class="w-full h-10 bg-black"></div>
 </template>
 
 <script setup lang="ts"></script>

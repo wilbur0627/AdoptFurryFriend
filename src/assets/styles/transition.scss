@@ -1,0 +1,46 @@
+// name: fade
+.fade-leave-active,
+.fade-enter-active,
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.3s linear;
+}
+
+.fade-enter-from,
+.fade-leave-to,
+.layout-enter,
+.layout-leave-to{
+  opacity: 0;
+}
+
+// name=slide-right
+.slide-right-leave-active,
+.slide-right-enter-active {
+  transition: all 0.55s ease;
+}
+
+.slide-right-enter-from {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+// name=fade-down
+.fade-down-leave-active,
+.fade-down-enter-active {
+  transition: all 0.55s ease;
+}
+
+.fade-down-enter-from {
+  opacity: 1;
+  transform: translateY(-100px);
+}
+
+.fade-down-leave-to {
+  opacity: 0;
+  transform: translateY(100px);
+}
