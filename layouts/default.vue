@@ -5,10 +5,6 @@
   </div>
 </template>
 
-<script setup>
-// const data = await $fetch(
-//   "https://data.moa.gov.tw/api/v1/AnimalRecognition?$top=10",
-// );
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>

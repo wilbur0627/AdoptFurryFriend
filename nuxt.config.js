@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
         },
       ],
     },
+    baseURL: "/",
   },
   imports: { dirs: ["store"] },
   compatibilityDate: "2024-11-01",

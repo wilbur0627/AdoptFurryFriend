@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-main sticky top-0 h-20 w-full shadow-lg">
+  <div class="sticky top-0 h-20 w-full bg-main shadow-lg">
     <div class="mx-auto flex w-full max-w-[1140px] items-center">
       <NuxtLink to="/" class="mr-10 flex cursor-pointer items-center sm:mr-20">
         <img class="h-20" src="/adopt.png" alt="動物認養資訊平台" />
