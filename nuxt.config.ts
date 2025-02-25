@@ -59,4 +59,5 @@ export default defineNuxtConfig({
       type: "module",
     },
   },
+  css: ["~/assets/styles/main.scss"],
 });

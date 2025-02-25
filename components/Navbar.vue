@@ -1,19 +1,19 @@
 <template>
-  <div class="sticky top-0 h-[110px] w-full shadow-lg">
-    <div
-      class="mx-auto flex w-full max-w-[1140px] items-center justify-between"
-    >
-      <NuxtLink to="/" class="flex cursor-pointer items-center">
-        <img class="h-[110px]" src="/adopt.png" alt="動物認養資訊平台" />
-        <p class="font-serif text-3xl font-bold text-[#333]">
+  <div class="bg-main sticky top-0 h-20 w-full shadow-lg">
+    <div class="mx-auto flex w-full max-w-[1140px] items-center">
+      <NuxtLink to="/" class="mr-10 flex cursor-pointer items-center sm:mr-20">
+        <img class="h-20" src="/adopt.png" alt="動物認養資訊平台" />
+        <p
+          class="font-serif text-lg font-bold text-white sm:text-xl lg:text-2xl"
+        >
           動物認養資訊平台
         </p>
       </NuxtLink>
-      <div class="items-ceter flex gap-x-2">
+      <div class="items-ceter flex gap-x-4">
         <NuxtLink
           v-for="list of navList"
           :key="list.path"
-          class="hover:text-main duration-200"
+          class="text-xs text-white duration-200 hover:text-[#63ffc8] sm:text-base"
           :to="list.path"
         >
           {{ list.name }}

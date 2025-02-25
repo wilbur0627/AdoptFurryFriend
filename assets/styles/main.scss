@@ -1,0 +1,10 @@
+// name: fade
+.fade-leave-active,
+.fade-enter-active {
+  transition: opacity 0.3s linear;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}

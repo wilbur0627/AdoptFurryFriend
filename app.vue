@@ -1,9 +1,11 @@
 <template>
-  <NuxtPwaManifest />
-  <NuxtLoadingIndicator />
-  <NuxtLayout>
-    <NuxtPage class="h-full" />
-  </NuxtLayout>
+  <div>
+    <NuxtPwaManifest />
+    <NuxtLoadingIndicator />
+    <NuxtLayout>
+      <NuxtPage class="h-full" />
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup></script>
