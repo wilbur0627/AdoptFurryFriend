@@ -1,0 +1,9 @@
+1 top 取最前筆數 如：將{top} 代換成 20
+2 skip 跳過筆數 如：將{skip} 代換成 100
+3 filter 篩選條件，運算式類別
+如下表。
+如：將{filter} 代換成貓、黑色
+(1) =animal_kind=貓
+(2) =animal_kind=貓&animal_colour=黑色
+※網址中的中文部分需要用 URLEncode
+轉換成 UTF-8
