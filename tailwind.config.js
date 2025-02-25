@@ -9,7 +9,11 @@ export default {
     "./app.{js,ts,vue}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: "#4d91ff",
+      },
+    },
   },
   plugins: [],
 };
