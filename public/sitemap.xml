@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
         <loc>https://www.adopt-furry.com/</loc>
         <lastmod>2025-02-25</lastmod>
-    </sitemap>
-</sitemapindex>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+</urlset>
