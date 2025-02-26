@@ -32,6 +32,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@vite-pwa/nuxt",
     "nuxt-aos",
+    "nuxt-swiper",
   ],
   pwa: {
     registerType: "autoUpdate",
