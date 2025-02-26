@@ -28,9 +28,13 @@
 </template>
 
 <script setup>
+const appStore = useAppStore();
+
+appStore.setLoading(true);
 const { data: animalListData } = await useFetch(
   "https://data.moa.gov.tw/api/v1/AnimalRecognition?$top=10",
 );
+appStore.setLoading(false);
 </script>
 
 <style lang="scss" scoped></style>

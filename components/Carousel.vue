@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <ClientOnly>
-      <swiper-container ref="containerRef">
-        <swiper-slide v-for="img in imgList" :key="img.name">
-          <img :src="getImage(img.name)" alt="" />
-        </swiper-slide>
-      </swiper-container>
-    </ClientOnly>
-  </div>
+  <ClientOnly>
+    <swiper-container ref="containerRef">
+      <swiper-slide v-for="img in imgList" :key="img.name">
+        <img :src="getImage(img.name)" alt="" />
+      </swiper-slide>
+    </swiper-container>
+  </ClientOnly>
 </template>
 
 <script setup>
