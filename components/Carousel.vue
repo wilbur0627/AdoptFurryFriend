@@ -3,7 +3,7 @@
     class="relative h-0 w-full overflow-hidden border-b-[5px] border-[#138f63] pb-[calc(22.91666666666667%)]"
   >
     <ClientOnly>
-      <swiper-container :loop="true" :autoplay="{ delay: 3000 }">
+      <swiper-container :loop="true" :autoplay="{ delay: 10000 }">
         <swiper-slide
           v-for="(animals, index) in animalList"
           :key="index"

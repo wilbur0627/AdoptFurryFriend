@@ -5,15 +5,34 @@
       <div
         v-for="dog in dogData"
         :key="dog.animal_id"
-        class="overflow-hidden rounded"
+        class="h-[450px] overflow-hidden rounded border p-3 shadow-md"
       >
-        <img :src="dog.album_file" :alt="dog.shelter_name" class="w-full" />
+        <img
+          :src="dog.album_file"
+          :alt="dog.shelter_name"
+          class="mb-2 h-[60%] w-full rounded border border-[#138f63]"
+        />
+        <div class="flex h-[40%] flex-col items-center justify-center">
+          <p>收容編號 : {{ dog.animal_subid }}</p>
+          <p>
+            {{
+              dog.animal_colour +
+              animalStore.bodyType[dog.animal_bodytype] +
+              animalStore.sexual[dog.animal_sex] +
+              dog.animal_kind
+            }}
+          </p>
+          <p>{{ dog.animal_place }}</p>
+          <p>{{ dog.shelter_tel }}</p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+const animalStore = useAnimalStore();
+
 const randomSkip = Math.floor(Math.random() * 100);
 const { data: dogData } = await useFetch("/api/moa", {
   server: true,
