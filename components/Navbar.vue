@@ -33,6 +33,10 @@ const navList = ref([
     name: "尋寵啟事",
     path: "/lose-love",
   },
+  {
+    name: "合法特定寵物業者名單",
+    path: "/legal-specific-pet",
+  },
 ]);
 </script>
 

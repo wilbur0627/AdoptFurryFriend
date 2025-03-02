@@ -5,13 +5,13 @@
     <div
       v-for="animal of animalListData.Data"
       :key="animal.animal_id"
-      class="flex flex-col items-center overflow-hidden rounded-md border shadow-lg duration-200 hover:shadow-2xl"
+      class="group flex flex-col items-center overflow-hidden rounded-md border shadow-lg duration-200 hover:shadow-xl"
     >
       <div
         class="my-5 h-[150px] w-[150px] overflow-hidden rounded-full lg:h-[200px] lg:w-[200px]"
       >
         <NuxtImg
-          class="h-[150px] w-[150px] lg:h-[200px] lg:w-[200px]"
+          class="h-[150px] w-[150px] rounded-full lg:h-[200px] lg:w-[200px]"
           :src="animal.album_file"
         />
       </div>

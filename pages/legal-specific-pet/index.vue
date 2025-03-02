@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <Carousel />
-    <MainPage />
-  </div>
+  <div>legal-specific-pet</div>
 </template>
 
 <script setup></script>
