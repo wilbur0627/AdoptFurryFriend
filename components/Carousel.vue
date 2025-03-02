@@ -1,16 +1,18 @@
 <template>
-  <div class="w-full border-b-[5px] border-[#138f63]">
+  <div
+    class="relative h-0 w-full overflow-hidden border-b-[5px] border-[#138f63] pb-[calc(22.91666666666667%)]"
+  >
     <ClientOnly>
       <swiper-container :loop="true" :autoplay="{ delay: 3000 }">
         <swiper-slide
           v-for="(animals, index) in animalList"
           :key="index"
-          class="flex cursor-pointer"
+          class="flex max-h-[22.91666666666667vw] cursor-pointer"
         >
           <div
             v-for="animal in animals"
             :key="animal.animal_id"
-            class="group relative max-h-[22.91666666666667vw] flex-1"
+            class="group relative flex-1"
             @click="goToDetail(animal)"
           >
             <img
