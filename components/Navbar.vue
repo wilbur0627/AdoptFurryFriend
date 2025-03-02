@@ -1,13 +1,13 @@
 <template>
-  <div class="sticky top-0 h-20 w-full bg-white shadow-lg">
+  <div class="sticky top-0 h-[60px] w-full bg-white shadow-lg md:h-20">
     <div class="mx-auto flex w-full items-center justify-between px-[32px]">
       <NuxtLink to="/" class="mr-10 flex cursor-pointer items-center sm:mr-20">
-        <img class="h-20" src="/adopt.png" alt="動物認養資訊平台" />
+        <img class="h-[60px] md:h-20" src="/adopt.png" alt="動物認養資訊平台" />
         <p class="font-serif text-lg font-bold sm:text-xl lg:text-2xl">
           動物認養資訊平台
         </p>
       </NuxtLink>
-      <div class="items-ceter flex gap-x-4">
+      <div class="items-ceter hidden gap-x-4 md:flex">
         <NuxtLink
           v-for="list of navList"
           :key="list.path"

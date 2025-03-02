@@ -6,7 +6,7 @@ export const useAnimalStore = defineStore(`animal${TokenKey}`, {
     bodyType: {
       SMALL: "小型",
       MEDIUM: "中型",
-      LARGE: "大型",
+      BIG: "大型",
     },
     sexual: {
       M: "公",
