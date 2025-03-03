@@ -37,9 +37,13 @@ const animalStore = useAnimalStore();
 
 const randomSkip = Math.floor(Math.random() * 100);
 const { data: dogData } = await useFetch("/api/moa", {
-  server: true,
+  key: "dogData",
   query: { top: 4, skip: randomSkip, filter: `animal_kind+like+狗` },
 });
+console.log("\n");
+console.log("Dog Component");
+console.log(dogData.value);
+console.log("\n");
 </script>
 
 <style lang="scss" scoped></style>
