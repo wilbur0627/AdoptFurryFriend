@@ -1,6 +1,6 @@
 <template>
-  <div class="mx-auto my-5 max-w-[1480px] px-5 md:px-10">
-    <p class="mb-5 text-center text-3xl">看貓咪</p>
+  <div class="mx-auto max-w-[1480px] px-5 py-5 md:px-10">
+    <h1 class="mb-5 text-center text-3xl">看貓咪</h1>
     <div
       class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
@@ -37,7 +37,7 @@ const animalStore = useAnimalStore();
 
 const randomSkip = Math.floor(Math.random() * 100);
 const { data: catData } = await useFetch("/api/moa", {
-  server: true,
+  key: "catData",
   query: { top: 4, skip: randomSkip, filter: `animal_kind+like+貓` },
 });
 </script>

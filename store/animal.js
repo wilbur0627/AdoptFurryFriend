@@ -11,6 +11,7 @@ export const useAnimalStore = defineStore(`animal${TokenKey}`, {
     sexual: {
       M: "公",
       F: "母",
+      N: "",
     },
     status: {
       NONE: "未公告",

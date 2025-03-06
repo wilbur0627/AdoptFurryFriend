@@ -22,7 +22,7 @@
               loading="lazy"
             />
             <div
-              class="absolute bottom-0 left-0 right-0 top-0 z-10 flex flex-col items-center justify-center bg-black bg-opacity-0 text-white duration-300 group-hover:bg-opacity-50"
+              class="absolute bottom-0 left-0 right-0 top-0 z-10 flex flex-col items-center justify-center bg-black bg-opacity-0 text-[0.83333333vw] text-white duration-300 group-hover:bg-opacity-50"
             >
               <p>收容編號 : {{ animal.animal_subid }}</p>
               <p>
@@ -50,7 +50,7 @@ const animalStore = useAnimalStore();
 
 const randomSkip = Math.floor(Math.random() * 100);
 const randomListData = await $fetch(
-  `https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL&$top=15&$skip=${randomSkip}`,
+  `https://data.moa.gov.tw/Service/OpenData/TransService.aspx?UnitId=QcbUEzN6E6DL&$top=30&$skip=${randomSkip}`,
 );
 const animalList = ref([]);
 let arr = [];

@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto my-5 max-w-[1480px] px-5 md:px-10">
-    <p class="mb-5 text-center text-3xl">看狗狗</p>
+    <h1 class="mb-5 text-center text-3xl">看狗狗</h1>
     <div
       class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
@@ -40,10 +40,6 @@ const { data: dogData } = await useFetch("/api/moa", {
   key: "dogData",
   query: { top: 4, skip: randomSkip, filter: `animal_kind+like+狗` },
 });
-console.log("\n");
-console.log("Dog Component");
-console.log(dogData.value);
-console.log("\n");
 </script>
 
 <style lang="scss" scoped></style>

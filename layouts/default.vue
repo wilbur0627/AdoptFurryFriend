@@ -2,6 +2,7 @@
   <div>
     <Navbar class="z-[999]" />
     <NuxtPage />
+    <Footer class="z-[999]" />
   </div>
 </template>
 
